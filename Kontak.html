@@ -62,33 +62,62 @@
 		</div>
 
 			<div class="container">
-				<form action="" class="contact-form">
-					<div>
-						<label for="Nama">Nama Lengkap</label>
-						<br>
-						<input type="text" placeholder="Nama Lengkap" size="50" id="nama" name="nama">
-					</div>
-						<br>
-					<div>
-						<label for="Kota">Kota</label>
-						<br>
-						<input type="text" placeholder="Kota" size="50" id="kota" name="kota">
-					</div>
-						<br>
-					<div>
-						<label for="email">Email</label>
-						<br>
-						<input type="email" placeholder="example@gmail.com" size="50" id="email" name="email">
-					</div>
-						<br>
-					<div>
-						<label for="pesan">Pesan</label>
-						<br>
-						<textarea name="pesan" placeholder="Tulis Pesan disini!!!" cols="50" rows="10" id="pesan"></textarea><br>
-					</div>
-					<div>
-						<button type="submit" id="kirim" name="kirim" value="kirim">Kirim</button>
-					</div>
+				<form action="?&amp;fv=b&amp;cs=c&amp;pv=tl&amp;cpt=c&amp;v=b" name="f" enctype="multipart/form-data" method="POST">
+					<input type="hidden" name="redir" value="?&amp;">
+					<input type="hidden" name="at" value="AF6bupNvJUCbEJUeKUFDmkjk9qW5ZNJ4sA">
+				<h2 class="hdn">Buat Formulir</h2>
+				<table width="100%" cellpadding="2" cellspacing="0" border="0" class="compose">
+					<tbody>
+						<tr>
+							<td width="1%" align="right" valign="top" nowrap="">
+								<b id="l-to">Kepada:</b>
+							</td>
+							<td>
+								<textarea name="to" id="to" rows="2" cols="40" wrap="virtual" class="i" autocomplete="off" aria-labelledby="l-to"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td align="right" nowrap="">
+								<b id="l-cc">Nama Lengkap:</b>
+							</td>
+							<td>
+								<input name="cc" id="cc" value="" type="text" cols="40" rows="2" size="50" class="i" autocomplete="off" aria-labelledby="l-cc">
+							</td>
+						</tr>
+						<tr>
+							<td align="right" nowrap="">
+								<b id="l-bcc">Alamat Lengkap:</b>
+							</td>
+							<td>
+								<input name="bcc" id="bcc" value="" type="text" size="50" class="i" autocomplete="off" aria-labelledby="l-bcc">
+							</td>
+						</tr>
+						<tr>
+							<td align="right" nowrap="">
+								<b id="l-s">No Telephone:</b>
+							</td>
+							<td>
+								<input name="subject" value="" type="text" size="50" class="i" aria-labelledby="l-s">
+							</td>
+						</tr>
+						<tr>
+							<td align="right" nowrap="">
+								<b id="1-p">Pesan:</b>
+							</td>
+							<td>
+								<textarea name="body" title="Isi Pesan" rows="15" cols="50" class="mi" aria-labelledby="Isi Pesan"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table width="100%" cellpadding="2" cellspacing="0" border="0" bgcolor="">
+					<tbody>
+						<tr>
+							<td>
+								<input type="submit" name="nvp_bu_send" value="Kirim">
+							</tr>
+						</tbody>
+					</table>
 				</form>
 			</div>
 		<!--End Form -->
